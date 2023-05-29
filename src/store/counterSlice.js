@@ -24,8 +24,12 @@ export const counterSlice = createSlice({
       state.value += action.payload
     },
     getUser: async (state) => {
-      const result = await axios.get('/someendpoint')
-      state.user = result.data
+      try {
+        const result = await axios.get('/someendpoint')
+        state.user = result.data
+      } catch (e) {
+        state.user = null
+      }
     }
   },
 })

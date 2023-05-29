@@ -12,15 +12,15 @@ const links = [
 
 function Base() {
   // const { getUser, user } = useCounter();
-  const user = useSelector(state => state.counter.user)
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    dispatch(getUser())
+  // const user = useSelector(state => state.counter.user)
+  // const dispatch = useDispatch()
+  //
+  // useEffect(() => {
+  //   dispatch(getUser())
     // getUser();
-  }, [dispatch])
+  // }, [])
   
-  console.log(user);
+  // console.log(user);
 
   return (
     <>

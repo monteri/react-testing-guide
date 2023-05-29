@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > button is rendered with title 1`] = `
+<button
+  role="button"
+>
+  Test
+</button>
+`;

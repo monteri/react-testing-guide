@@ -7,6 +7,11 @@ import Button from "..";
 describe('Button', () => {
   test('button is rendered with title', async () => {
     render(<Button title="Test" />)
+    expect(screen.getByText('Test')).toMatchSnapshot()
+  })
+
+  test('button is rendered with title', async () => {
+    render(<Button title="Test" />)
     expect(screen.getByText('Test')).toBeInTheDocument()
   })
 
