@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <h1 data-test-id="about">About</h1>
-      <h3 role="counterinfo">{count}</h3>
+      <h3 role="counterinfo" style={{ textAlign: 'center' }}>{count}</h3>
       <Button
         onClick={() => decrement()}
         title="decrement"

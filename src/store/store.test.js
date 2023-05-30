@@ -1,5 +1,5 @@
 import {describe, test, expect, vi, beforeEach} from 'vitest'
-import counterReducer, { getUser } from "../store/counterSlice";
+import counterReducer, { getUser, incrementByAmount } from "../store/counterSlice";
 import axios from "axios";
 import useCountStore from "../store/zustand";
 
@@ -25,4 +25,9 @@ describe('Base', () => {
 
     expect(useCountStore.getState().user).toEqual(userMock)
   });
+
+  // test('incrementByAmount test', () => {
+  //   const result = counterReducer({ value: 0 }, incrementByAmount(5))
+  //   expect(result).toEqual({ value: 5 })
+  // })
 })
