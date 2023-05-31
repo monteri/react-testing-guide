@@ -26,8 +26,8 @@ describe('Base', () => {
     expect(useCountStore.getState().user).toEqual(userMock)
   });
 
-  // test('incrementByAmount test', () => {
-  //   const result = counterReducer({ value: 0 }, incrementByAmount(5))
-  //   expect(result).toEqual({ value: 5 })
-  // })
+  test('incrementByAmount test', () => {
+    const result = counterReducer({ value: 0 }, incrementByAmount(5))
+    expect(result).toEqual({ value: 5 })
+  })
 })

@@ -16,6 +16,7 @@ describe('Navbar', () => {
     // render(
     //   <Navbar links={links} />
     // )
+
     screen.getAllByTestId('navbar-link').forEach(link => {
       expect(link.href).toBeTruthy();
     })

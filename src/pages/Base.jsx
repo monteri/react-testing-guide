@@ -16,10 +16,10 @@ function Base() {
   // const dispatch = useDispatch()
   //
   // useEffect(() => {
-  //   dispatch(getUser())
-    // getUser();
+  //   // dispatch(getUser())
+  //   getUser();
   // }, [])
-  
+
   // console.log(user);
 
   return (
